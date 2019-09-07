@@ -26,8 +26,9 @@ source ~/.bashrc
 sudo apt-get install ros-melodic-ros-controllers*
 ```
 
-### install Moveit Inverse Kinematic
+### install Moveit 
 ```bash
+sudo apt-get install ros-melodic-moveit
 sudo apt-get install ros-melodic-trac-ik
 ```
 
@@ -40,8 +41,8 @@ cd catkin_ws
 mkdir src
 cd src
 git clone https://github.com/christian-rauch/kinova-ros.git
-rm -r ~/catkin_ws/src/kinova-ros/kinova_moveit/inverse_kinematics_plugins
-rm -r ~/catkin_ws/src/kinova-ros/kinova_moveit/kinova_arm_moveit_demo
+git clone https://bitbucket.org/theconstructcore/openai_ros.git
+git clone https://github.com/Simon-Steinmann/jaco2_Sim2Real/j2n6s300_ml.git
 cd ~/catkin_ws/
 catkin_make
 rosdep install --from-paths src --ignore-src --rosdistro melodic -y
