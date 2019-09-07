@@ -32,6 +32,12 @@ sudo apt-get install ros-melodic-moveit
 sudo apt-get install ros-melodic-trac-ik
 ```
 
+### install pip and gym 
+```bash
+sudo apt install python-pip
+pip install gym
+```
+
 ### set up catkin workstpace
 ```bash
 source ~/.bashrc
